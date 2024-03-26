@@ -1,28 +1,23 @@
-# Twitter Crawler Project
-[中文版](README_CN.md)
-
-
-This project contains two main scripts for scraping tweets from Twitter: `set_cookies.py` and `spyder.ipynb`.
+# Twitter 爬虫项目
+[EnglishVersion](README_EN.md)
+本项目包含两个主要脚本，用于从 Twitter 抓取推文：`set_cookies.py` 和 `spyder.ipynb`。
 
 ## set_cookies.py
 
-- Purpose: Automates the process of logging into Twitter and saving the login cookies.
-- How it works: Opens the Twitter login page and waits for the user to log in manually. After 30 seconds, it saves the session cookies into a file.
+- 目的：自动化登录 Twitter 并保存登录 cookies 的过程。
+- 工作原理：打开 Twitter 登录页面，等待用户手动登录。30秒后，将会话 cookies 保存到文件中。
 
 ## spyder.ipynb
 
-- Purpose: Uses the saved cookies to scrape tweets from a specified Twitter search URL.
-- Features: Loads cookies, navigates to a Twitter search page, collects tweets, extracts details (username, text, images), and saves the data to a JSON file.
+- 目的：使用保存的 cookies 从指定的 Twitter 搜索 URL 中抓取推文。
+- 特点：加载 cookies，导航到 Twitter 搜索页面，收集推文，提取详细信息（用户名、文本、图片），并将数据保存到 JSON 文件中。
 
-## Installation
+## 安装
 
-Ensure you have Python and Selenium installed. You may need to adjust the path to your ChromeDriver in both scripts.
+确保已安装 Python 和 Selenium。可能需要在两个脚本中调整 ChromeDriver 的路径。
 
-## Usage
+## 使用方法
 
-1. Run `set_cookies.py` first to log in and save your cookies.
-2. Modify the search URL in `spyder.ipynb` as needed.
-3. Run `spyder.ipynb` to start scraping tweets.
-
-
-
+1. 首先运行 `set_cookies.py` 登录并保存您的 cookies。
+2. 根据需要修改 `spyder.ipynb` 中的搜索 URL。
+3. 运行 `spyder.ipynb` 开始抓取推文。
